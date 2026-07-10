@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OLGO Re:pine 두피 밸런싱 샴푸바 — 상세페이지 시안</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+  :root{
+    --ink:#232620; --gray:#767b6e; --sage:#aecc92; --sage-deep:#6b8a49;
+    --sage-bg:#f3f8ec; --line:#e4ecda; --white:#ffffff;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{font-family:'Pretendard',-apple-system,sans-serif;color:var(--ink);background:#fafaf7;-webkit-font-smoothing:antialiased;word-break:keep-all;}
+  .page{max-width:860px;margin:0 auto;background:var(--white);}
+  section{padding:96px 48px;}
+  @media (max-width:640px){section{padding:64px 24px;}}
+  img{display:block;max-width:100%;}
+  .eyebrow{display:inline-block;font-size:15px;font-weight:600;letter-spacing:.14em;color:var(--sage-deep);text-transform:uppercase;margin-bottom:20px;}
+  h2{font-size:40px;font-weight:700;line-height:1.3;letter-spacing:-.02em;}
+  h2 .accent{color:var(--sage-deep);}
+  .lead{font-size:19px;line-height:1.7;color:var(--gray);margin-top:20px;}
+  @media (max-width:640px){h2{font-size:30px;} .lead{font-size:17px;}}
+  .center{text-align:center;}
+
+  /* HERO (확장 배경) */
+  .hero{position:relative;padding:0;background:#babb93;}
+  .hero .bgimg{width:100%;display:block;}
+  .hero .overlay{position:absolute;top:0;left:0;right:0;text-align:center;padding:64px 24px 0;}
+  .badge{display:inline-flex;align-items:center;gap:10px;background:#3f5226;color:#ffffff;font-size:19px;font-weight:800;border-radius:100px;padding:15px 32px;box-shadow:0 4px 14px rgba(40,50,25,.3);}
+  .badge::before{content:'';width:8px;height:8px;border-radius:50%;background:var(--sage);}
+  .hero .logo{width:min(400px,64%);margin:40px auto 0;}
+  .hero .sub{font-size:18px;letter-spacing:.3em;color:#fdfef9;margin-top:14px;text-transform:uppercase;opacity:.9;}
+  .hero h1{font-size:32px;font-weight:800;margin-top:38px;letter-spacing:-.02em;color:#2f381f;}
+  .hero p.copy{font-size:18px;color:#3f4a2c;margin-top:12px;line-height:1.7;}
+  @media (max-width:640px){.hero h1{font-size:24px;} .hero p.copy{font-size:15px;} .hero .overlay{padding-top:40px;} .hero .logo{margin-top:24px;}}
+
+  /* BENEFIT */
+  .icons4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:52px;}
+  @media (max-width:640px){.icons4{grid-template-columns:repeat(2,1fr);}}
+  .ic{display:flex;flex-direction:column;align-items:center;gap:14px;}
+  .ic .circle{width:92px;height:92px;border-radius:50%;background:var(--sage-bg);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;color:var(--sage-deep);}
+  .ic .t{font-size:17px;font-weight:800;}
+  .benefit-tag{margin:44px auto 0;max-width:560px;text-align:center;font-size:20px;font-weight:700;line-height:1.6;}
+  .benefit-tag strong{color:var(--sage-deep);}
+  .metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:64px;}
+  .metric{padding:40px 12px;text-align:center;border-left:1px solid var(--line);}
+  .metric:first-child{border-left:none;}
+  .metric .num{font-size:32px;font-weight:800;color:var(--sage-deep);letter-spacing:-.02em;}
+  .metric .num small{font-size:17px;font-weight:700;}
+  .metric .label{font-size:14px;color:var(--gray);margin-top:8px;line-height:1.45;}
+  @media (max-width:640px){
+    .metrics{grid-template-columns:repeat(2,1fr);}
+    .metric{border:none;border-top:1px solid var(--line);padding:26px 8px;}
+    .metric:nth-child(-n+2){border-top:none;}
+    .metric .num{font-size:24px;}
+  }
+
+  /* PROBLEM */
+  .problem{text-align:center;background:var(--sage-bg);}
+  .prob-list{max-width:560px;margin:52px auto 0;display:flex;flex-direction:column;gap:14px;}
+  .prob-item{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:22px 28px;display:flex;align-items:center;gap:16px;text-align:left;}
+  .prob-item .chk{color:var(--sage-deep);font-weight:800;font-size:18px;}
+  .prob-item .q{font-size:18px;font-weight:700;flex:1;}
+  .prob-item .cause{font-size:13px;font-weight:700;color:var(--sage-deep);background:var(--sage-bg);border-radius:100px;padding:7px 14px;white-space:nowrap;}
+  .prob-close{margin-top:44px;font-size:20px;font-weight:700;line-height:1.6;}
+  .prob-close .accent{color:var(--sage-deep);}
+
+  /* SOLUTION 공통 */
+  .flow{display:flex;justify-content:center;gap:14px;margin-top:44px;flex-wrap:wrap;}
+  .flow .step-chip{background:var(--sage-bg);border:1px solid var(--line);border-radius:100px;padding:14px 30px;font-size:18px;font-weight:700;color:var(--sage-deep);}
+  .flow .arr{align-self:center;color:var(--sage);font-size:18px;}
+  .cards{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:56px;}
+  @media (max-width:640px){.cards{grid-template-columns:1fr;}}
+  .card{background:var(--white);border:1px solid var(--line);border-radius:24px;padding:40px 36px;}
+  .card .tag{display:inline-block;background:var(--sage-deep);color:#fff;font-size:13px;font-weight:700;border-radius:6px;padding:6px 12px;letter-spacing:.05em;}
+  .card h3{font-size:26px;font-weight:800;margin-top:18px;letter-spacing:-.01em;}
+  .card p.desc{font-size:16px;color:var(--gray);line-height:1.65;margin-top:10px;}
+  .card ul{list-style:none;margin-top:22px;}
+  .card li{font-size:17px;font-weight:600;padding:13px 0 13px 34px;position:relative;border-bottom:1px solid var(--line);}
+  .card li:last-child{border-bottom:none;}
+  .card li::before{content:'✓';position:absolute;left:2px;color:var(--sage-deep);font-weight:800;}
+  .chips{margin-top:20px;display:flex;gap:8px;flex-wrap:wrap;}
+  .chip{font-size:13px;font-weight:600;color:var(--sage-deep);background:var(--sage-bg);border-radius:100px;padding:7px 14px;}
+  .grid4{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:56px;}
+  @media (max-width:640px){.grid4{grid-template-columns:1fr;}}
+  .grid4 .g-item{border:1px solid var(--line);border-radius:20px;padding:30px 28px;background:var(--white);}
+  .g-item h4{font-size:20px;font-weight:800;color:var(--sage-deep);}
+  .g-item p{font-size:15px;color:var(--gray);margin-top:8px;line-height:1.6;}
+  .feel-img{border-radius:24px;overflow:hidden;margin-top:56px;}
+  .feel-img video{width:100%;display:block;}
+  .feel-points{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:24px;}
+  @media (max-width:640px){.feel-points{grid-template-columns:1fr;}}
+  .feel-points .fp{background:var(--sage-bg);border-radius:20px;padding:28px 24px;text-align:center;}
+  .fp .no{font-size:15px;font-weight:800;color:var(--sage);letter-spacing:.1em;}
+  .fp h4{font-size:19px;font-weight:800;margin-top:8px;}
+  .fp p{font-size:15px;color:var(--gray);margin-top:8px;line-height:1.55;}
+  .howto{background:var(--sage-bg);}
+  .steps{display:flex;flex-direction:column;gap:24px;margin-top:56px;}
+  .step{display:grid;grid-template-columns:300px 1fr;background:var(--white);border-radius:24px;overflow:hidden;}
+  @media (max-width:640px){.step{grid-template-columns:1fr;}}
+  .step img,.step video{width:100%;height:100%;min-height:250px;max-height:360px;object-fit:cover;display:block;}
+  .step .body{padding:34px 36px;display:flex;flex-direction:column;justify-content:center;}
+  .step .n{display:inline-flex;width:34px;height:34px;border-radius:50%;background:var(--sage-deep);color:#fff;font-weight:800;font-size:16px;align-items:center;justify-content:center;}
+  .step h4{font-size:19px;font-weight:800;margin-top:14px;}
+  .step p{font-size:15px;color:var(--gray);line-height:1.7;margin-top:8px;}
+
+  /* 시험/데이터 */
+  .story-img{position:relative;border-radius:24px;overflow:hidden;margin-top:56px;}
+  .story-img img{width:100%;}
+  .story-img figcaption{position:absolute;left:20px;bottom:20px;background:rgba(255,255,255,.92);border-radius:100px;padding:9px 20px;font-size:14px;font-weight:600;color:var(--sage-deep);}
+  .story-text{max-width:620px;margin:52px auto 0;text-align:center;font-size:18px;line-height:1.9;color:var(--ink);}
+  .story-text strong{color:var(--sage-deep);}
+  .data-wrap{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:56px;}
+  @media (max-width:640px){.data-wrap{grid-template-columns:1fr;}}
+  .data-box{background:var(--sage-bg);border-radius:24px;padding:40px 36px;text-align:center;}
+  .data-box h4{font-size:19px;font-weight:700;}
+  .bars{display:flex;justify-content:center;align-items:flex-end;gap:44px;height:190px;margin-top:34px;}
+  .bar{width:64px;border-radius:10px 10px 0 0;position:relative;}
+  .bar.control{height:160px;background:#d5d8cc;}
+  .bar.result{background:var(--sage-deep);}
+  .bar span{position:absolute;top:-30px;left:50%;transform:translateX(-50%);font-size:16px;font-weight:800;color:var(--ink);white-space:nowrap;}
+  .bar-label{display:flex;justify-content:center;gap:44px;margin-top:14px;}
+  .bar-label div{width:64px;font-size:13px;color:var(--gray);line-height:1.4;}
+  .footnote{font-size:13px;color:#9aa08f;margin-top:28px;text-align:center;}
+  .ba{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:56px;}
+  .ba figure{position:relative;border-radius:20px;overflow:hidden;}
+  .ba img{width:100%;height:300px;object-fit:cover;}
+  .ba figcaption{position:absolute;top:16px;left:16px;font-size:14px;font-weight:700;padding:8px 18px;border-radius:100px;background:rgba(255,255,255,.92);}
+  .ba .after figcaption{background:var(--sage-deep);color:#fff;}
+  .ba .cap{position:static;display:block;background:none;padding:14px 4px 0;font-size:16px;font-weight:600;color:var(--ink);text-align:center;}
+
+  /* 후기 */
+  .reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:32px;}
+  @media (max-width:640px){.reviews{grid-template-columns:1fr;}}
+  .review{background:var(--white);border:1px solid var(--line);border-radius:20px;padding:32px 28px;display:flex;flex-direction:column;}
+  .review .stars{color:#e8b84b;font-size:18px;letter-spacing:3px;}
+  .review p{font-size:16px;line-height:1.7;margin-top:16px;flex:1;}
+  .review .who{font-size:14px;font-weight:700;color:var(--sage-deep);margin-top:18px;}
+  .review.single{max-width:640px;margin:32px auto 0;text-align:center;}
+  .reviews-hero{border-radius:24px;overflow:hidden;margin-top:56px;}
+  .inf-feature{display:grid;grid-template-columns:340px 1fr;background:var(--white);border:1px solid var(--line);border-radius:24px;overflow:hidden;margin-top:56px;}
+  @media (max-width:640px){.inf-feature{grid-template-columns:1fr;}}
+  .inf-feature video{width:100%;height:100%;object-fit:cover;display:block;min-height:300px;}
+  .inf-feature .body{padding:40px 36px;display:flex;flex-direction:column;justify-content:center;text-align:left;}
+  .inf-feature .stars{color:#e8b84b;font-size:18px;letter-spacing:3px;}
+  .inf-feature p{font-size:17px;line-height:1.8;margin-top:14px;}
+  .inf-feature .who{font-size:14px;font-weight:700;color:var(--sage-deep);margin-top:16px;}
+
+  .news2{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:56px;}
+  @media (max-width:640px){.news2{grid-template-columns:1fr;}}
+  .news2 figure,.news-wide figure{margin:0;}
+  .news2 .imgwrap,.news-wide .imgwrap{border-radius:20px;overflow:hidden;}
+  .news2 img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;}
+  .news2 figcaption,.news-wide figcaption{text-align:center;font-size:14px;font-weight:600;color:var(--gray);margin-top:12px;}
+  .news-wide{margin-top:22px;}
+  .news-wide img{width:100%;display:block;}
+
+  /* 스토리 */
+  .facts3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:56px;}
+  @media (max-width:640px){.facts3{grid-template-columns:1fr;}}
+  .fact{background:var(--sage-bg);border-radius:20px;padding:32px 26px;}
+  .fact .f-no{font-size:14px;font-weight:800;color:var(--sage);letter-spacing:.12em;}
+  .fact h4{font-size:19px;font-weight:800;margin-top:10px;line-height:1.4;}
+  .fact p{font-size:15px;color:var(--gray);margin-top:10px;line-height:1.65;}
+  .story-quote{margin:72px auto 0;max-width:560px;text-align:center;font-size:22px;font-weight:700;line-height:1.6;letter-spacing:-.01em;}
+  .story-quote::before{content:'';display:block;width:44px;height:2px;background:var(--sage);margin:0 auto 28px;}
+
+  /* 지속가능성 */
+  .sus-img{border-radius:24px;overflow:hidden;margin-top:56px;}
+  .sus-list{margin-top:24px;display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+  @media (max-width:640px){.sus-list{grid-template-columns:1fr;}}
+  .sus-item{border:1px solid var(--line);border-radius:20px;padding:28px;}
+  .sus-item .en{font-size:14px;font-weight:700;color:var(--sage);letter-spacing:.08em;text-transform:uppercase;}
+  .sus-item h4{font-size:19px;font-weight:800;margin-top:8px;}
+  .sus-item p{font-size:15px;color:var(--gray);margin-top:8px;line-height:1.6;}
+
+  /* FAQ / INFO / FOOTER */
+  .faq details{border-bottom:1px solid var(--line);}
+  .faq details:first-of-type{border-top:1px solid var(--line);}
+  .faq summary{list-style:none;cursor:pointer;padding:26px 40px 26px 4px;font-size:18px;font-weight:700;position:relative;}
+  .faq summary::-webkit-details-marker{display:none;}
+  .faq summary::after{content:'+';position:absolute;right:8px;top:50%;transform:translateY(-50%);font-size:24px;font-weight:400;color:var(--sage-deep);}
+  .faq details[open] summary::after{content:'−';}
+  .faq .a{padding:0 4px 28px;font-size:16px;color:var(--gray);line-height:1.7;}
+  .faq{margin-top:48px;}
+  .info-table{width:100%;border-collapse:collapse;margin-top:48px;}
+  .info-table th,.info-table td{text-align:left;padding:18px 8px;border-bottom:1px solid var(--line);font-size:16px;vertical-align:top;}
+  .info-table th{width:150px;color:var(--gray);font-weight:600;}
+  .ingredients{font-size:14px;color:#9aa08f;line-height:1.8;margin-top:20px;}
+  footer{background:var(--sage-bg);text-align:center;padding:72px 24px;}
+  footer p{font-size:15px;color:var(--gray);margin-top:14px;line-height:1.7;}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- 1. HERO -->
+  <section class="hero" id="s01">
+    <img class="bgimg" src="images/hero_ext.jpg" alt="Re:pine 샴푸바">
+    <div class="overlay">
+      <span class="badge">식약처 보고 · 탈모 증상 완화 기능성 화장품</span>
+      <img class="logo" src="images/logo_white.png" alt="Re:pine 로고">
+      <div class="sub">Scalp Balancing Shampoo Bar</div>
+      <h1>정화하고, 다시 채우다</h1>
+      <p class="copy">잣 솔방울 폴리페놀과 편백 피톤치드를 담은<br>민감 두피를 위한 약산성 탈모 기능성 샴푸바</p>
+    </div>
+  </section>
+
+  <!-- 2. BENEFIT -->
+  <section id="s02">
+    <div class="center">
+      <span class="eyebrow">Benefit</span>
+      <h2>하나의 바에 담은<br><span class="accent">4가지 두피 솔루션</span></h2>
+    </div>
+    <div class="icons4">
+      <div class="ic">
+        <div class="circle"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M4 20h16"/><path d="M7 20v-6"/><path d="M12 20V9"/><path d="M17 20V13"/><path d="M7 11c0-2.5 1.5-4 2.5-5"/><path d="M12 6c.8-1.2 2-2 3.5-2"/></svg></div>
+        <div class="t">탈모 완화</div>
+      </div>
+      <div class="ic">
+        <div class="circle"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c3.5 4.5 6 7.5 6 11a6 6 0 0 1-12 0c0-3.5 2.5-6.5 6-11z"/><path d="M9.5 14a2.5 2.5 0 0 0 2.5 2.5"/></svg></div>
+        <div class="t">두피 진정</div>
+      </div>
+      <div class="ic">
+        <div class="circle"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><text x="12" y="15.5" text-anchor="middle" font-size="8.5" font-weight="700" fill="currentColor" stroke="none" font-family="Pretendard,sans-serif">pH</text></svg></div>
+        <div class="t">약산성</div>
+      </div>
+      <div class="ic">
+        <div class="circle"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21v-8"/><path d="M12 13C12 9.5 9.5 7.5 6 7.5c0 3.5 2.5 5.5 6 5.5z"/><path d="M12 11c0-3.5 2.5-6 6-6 0 3.5-2.5 6-6 6z"/><path d="M8 21h8"/></svg></div>
+        <div class="t">두피·모발 영양</div>
+      </div>
+    </div>
+    <p class="benefit-tag"><strong>잣 솔방울 추출물</strong>과 <strong>편백 에센셜오일</strong>의<br>이중 두피·탈모 증상 완화 케어</p>
+    <div class="metrics">
+      <div class="metric"><div class="num">특허</div><div class="label">항염 잣 솔방울 폴리페놀<br>(제10-1443023호)</div></div>
+      <div class="metric"><div class="num">15,000<small>ppm</small></div><div class="label">고농도 편백<br>피톤치드 오일</div></div>
+      <div class="metric"><div class="num">99.9<small>%</small></div><div class="label">고순도 피톤치드<br>수증기 증류 추출</div></div>
+      <div class="metric"><div class="num">6<small>종</small></div><div class="label">가수분해<br>식물성 단백질</div></div>
+    </div>
+  </section>
+
+  <!-- 3. PROBLEM -->
+  <section class="problem" id="s03">
+    <span class="eyebrow">Problem</span>
+    <h2>혹시, 이런 고민<br>있으신가요?</h2>
+    <div class="prob-list">
+      <div class="prob-item"><span class="chk">✔</span><span class="q">두피가 붉고 뜨겁다</span><span class="cause">두피 열감</span></div>
+      <div class="prob-item"><span class="chk">✔</span><span class="q">오후만 되면 떡 진다</span><span class="cause">유수분 밸런스</span></div>
+      <div class="prob-item"><span class="chk">✔</span><span class="q">민감하고 가렵다</span><span class="cause">모공 막힘</span></div>
+      <div class="prob-item"><span class="chk">✔</span><span class="q">머리카락이 얇아진 것 같다</span><span class="cause">탈모 고민</span></div>
+      <div class="prob-item"><span class="chk">✔</span><span class="q">두피가 들여다 보인다</span><span class="cause">탈모 고민</span></div>
+    </div>
+    <p class="prob-close">하나라도 해당된다면,<br><span class="accent">두피 밸런스가 무너지고 있다는 신호</span>입니다.</p>
+  </section>
+  <!-- 4. SOLUTION -->
+  <section id="s04">
+    <div class="center">
+      <span class="eyebrow">Solution</span>
+      <h2>Re:pine의 해답,<br><span class="accent">정화하고 다시 채우다</span></h2>
+      <p class="lead">민감해지고 지친 두피를 정화·진정시킨 뒤,<br>힘없이 약해진 모발에 영양과 탄력을 채웁니다.</p>
+    </div>
+    <div class="flow">
+      <span class="step-chip">정화</span><span class="arr">→</span>
+      <span class="step-chip">진정</span><span class="arr">→</span>
+      <span class="step-chip">회복</span><span class="arr">→</span>
+      <span class="step-chip">풍성함</span>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <span class="tag">1차 케어 · 특허</span>
+        <h3>가평 잣 솔방울 폴리페놀</h3>
+        <p class="desc">잣 솔방울 외종피의 폴리페놀이<br>민감해진 두피의 밸런스를 잡아줍니다.</p>
+        <ul>
+          <li>두피 보호</li>
+          <li>밸런스 케어</li>
+          <li>외부 자극 케어</li>
+        </ul>
+        <div class="chips"><span class="chip">특허 제10-1443023호</span></div>
+      </div>
+      <div class="card">
+        <span class="tag">2차 케어 · 고순도</span>
+        <h3>편백 피톤치드 오일</h3>
+        <p class="desc">국내 청정 숲 편백 잎을 수증기 증류해<br>숲의 청량함을 그대로 담았습니다.</p>
+        <ul>
+          <li>99.9% 고순도 피톤치드</li>
+          <li>두피 진정</li>
+          <li>청량감</li>
+          <li>15,000ppm 고농도</li>
+        </ul>
+        <div class="chips"><span class="chip">VEGAN 인증</span><span class="chip">ECOCERT 승인 원료</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. 기능 성분 -->
+  <section class="problem" id="s05">
+    <div class="center">
+      <span class="eyebrow">Key Ingredients</span>
+      <h2>두피 환경을 바꾸는<br>핵심 기능성 성분</h2>
+      <p class="lead">두피와 모공은 깨끗하게, 모발은 부드럽게.</p>
+    </div>
+    <div class="grid4">
+      <div class="g-item"><h4>살리실산</h4><p>두피 각질 케어 · 모공 노폐물 관리 · 피지 밸런스</p></div>
+      <div class="g-item"><h4>덱스판테놀</h4><p>두피 보습 · 두피 보호 · 민감 두피 케어</p></div>
+      <div class="g-item"><h4>6종 가수분해 단백질</h4><p>쌀·콩·완두·참깨·보리·헤이즐넛 — 윤기 회복 · 탄력 강화</p></div>
+    </div>
+  </section>
+
+  <!-- 6. 사용감 -->
+  <section id="s06">
+    <div class="center">
+      <h2>샴푸바는 불편할 거라는 생각,<br><span class="accent">Re:pine이 바꿉니다</span></h2>
+    </div>
+    <div class="feel-img"><video src="images/foam_clip.mp4" autoplay muted loop playsinline></video></div>
+    <div class="feel-points">
+      <div class="fp"><div class="no">01</div><h4>풍성한 거품</h4><p>소량 사용만으로도 쫀쫀하고 조밀한 거품</p></div>
+      <div class="fp"><div class="no">02</div><h4>부드러운 세정감</h4><p>모발은 뻣뻣함 없이 부드럽게</p></div>
+      <div class="fp"><div class="no">03</div><h4>간편한 고체 타입</h4><p>욕실에서도, 여행갈 때도 가볍게</p></div>
+    </div>
+  </section>
+
+  <!-- 7. HOW TO USE -->
+    <!-- 8. 시험 -->
+  <section style="padding-bottom:0;" id="s08">
+    <div class="center">
+      <span class="eyebrow">Proven by Research</span>
+      <h2>과학으로 확인한 <span class="accent">진정 효과</span></h2>
+      <p class="lead">경기도 산림환경연구소 연구를 통해<br>염증매개 인자를 억제하는 효과가 확인되었습니다.</p>
+    </div>
+    <figure class="news-wide" style="margin-top:56px;">
+      <div class="imgwrap"><img src="images/news.jpg" alt="GTV 기획보도 — 경기도 산림환경연구소 인터뷰"></div>
+      <figcaption>경기도 산림환경연구소 인터뷰 · GTV 기획보도</figcaption>
+    </figure>
+    <div class="news2" style="margin-top:26px;">
+      <figure>
+        <div class="imgwrap"><img src="images/news_dev.jpg" alt="탈모 기능성 고형 샴푸 개발"></div>
+        <figcaption>미성숙 잣 구과 활용 · 탈모 기능성 고형 샴푸 개발</figcaption>
+      </figure>
+      <figure>
+        <div class="imgwrap"><img src="images/news_meeting.jpg" alt="올고 × 연구소 개발 협업 현장"></div>
+        <figcaption>올고 × 연구소 개발 협업 현장</figcaption>
+      </figure>
+    </div>
+    <p class="story-text" style="margin-top:36px;">
+      “잣 구과 추출물이 <strong>피부 진정과 염증 억제에 도움</strong> —<br>
+      피톤치드를 함유하고 있어 <strong>항균 작용과 항부패 작용</strong>도 있습니다.<br>
+      <strong>항산화 효과가 상당히 뛰어납니다.</strong>”
+      <br><span style="font-size:14px;color:var(--gray);">채정우 박사 · 경기도 산림환경연구소<br>GTV 기획보도, 2026년 7월 8일</span>
+    </p>
+    <div class="data-wrap">
+      <div class="data-box">
+        <h4>NO 생성 억제</h4>
+        <div class="bars">
+          <div class="bar control"><span>100</span></div>
+          <div class="bar result" style="height:64px;"><span>40%</span></div>
+        </div>
+        <div class="bar-label"><div>LPS<br>(대조군)</div><div>잣구과 추출물<br>(25㎍/mL)</div></div>
+      </div>
+      <div class="data-box">
+        <h4>IL-1β 생성 억제</h4>
+        <div class="bars">
+          <div class="bar control"><span>100</span></div>
+          <div class="bar result" style="height:48px;"><span>30%</span></div>
+        </div>
+        <div class="bar-label"><div>LPS<br>(대조군)</div><div>잣구과 추출물<br>(25㎍/mL)</div></div>
+      </div>
+    </div>
+    <p class="footnote">* 특허 연구 데이터 기반 / 원료적 특성에 한함</p>
+  </section>
+
+  <!-- 9. Before/After -->
+  <section id="s09">
+    <div class="center">
+      <span class="eyebrow">Visible Change</span>
+      <h2>눈에 보이는 변화</h2>
+      <p class="lead">힘없이 처진 모발은 가볍게 정돈되고,<br>건강한 윤기와 볼륨감은 살아납니다.</p>
+    </div>
+    <div class="ba">
+      <figure class="before">
+        <img src="images/scalp_before.jpg" alt="사용 전 두피">
+        <figcaption>Before</figcaption>
+        <span class="cap">눈에 띄는 정수리 탈모</span>
+      </figure>
+      <figure class="after">
+        <img src="images/scalp_after.jpg" alt="사용 후 두피">
+        <figcaption>After</figcaption>
+        <span class="cap">두피 진정 + 탈모 완화</span>
+      </figure>
+    </div>
+  </section>
+  <!-- 10. 후기 -->
+  <section class="problem" id="s10">
+    <div class="center">
+      <span class="eyebrow">Real Review</span>
+      <h2>먼저 경험한 분들의 <span class="accent">진짜 후기</span></h2>
+    </div>
+    <div class="inf-feature">
+      <video src="images/review_clip.mp4" autoplay muted loop playsinline></video>
+      <div class="body">
+        <div class="stars">★★★★★</div>
+        <p>“얇은 모발이 항상 고민인데, 사용할수록 축 쳐지던 모발에 볼륨이 살아나요. 거품 내는 순간 숲 향이 확 퍼지는데, 진짜 산림욕하는 기분!”</p>
+        <div class="who">인플루언서 진선</div>
+      </div>
+    </div>
+    <div class="reviews">
+      <div class="review">
+        <div class="stars">★★★★★</div>
+        <p>“부드럽고 조밀한 거품이 붉고 예민했던 두피를 편안하게 케어해주고, 힘없던 모발도 더 건강해지는 느낌.”</p>
+        <div class="who">인플루언서 ellen.lee</div>
+      </div>
+      <div class="review">
+        <div class="stars">★★★★★</div>
+        <p>“사용하고 나면 두피가 한결 편안해져요. 편백 피톤치드 향이 상쾌해서 샴푸 시간이 오히려 힐링처럼 느껴졌어요.”</p>
+        <div class="who">인플루언서 금미 Kye</div>
+      </div>
+      <div class="review">
+        <div class="stars">★★★★★</div>
+        <p>“샴푸바는 처음인데 거품이 풍성하고 사용감이 기대 이상. 신경 쓰이던 정수리도 전보다 건강해 보여요.”</p>
+        <div class="who">인플루언서 luv_sso2</div>
+      </div>
+    </div>
+    <div class="review single">
+      <div class="stars">★★★★★</div>
+      <p>“성분이 정말 좋아서 두피에 자극이 없고 세정력도 뛰어나서 좋습니다. 거품도 너무 잘 나고, 향이 좋아요. 게다가 머리카락에 힘이 생겼어요.”</p>
+    </div>
+    <p class="footnote">* 인플루언서 체험 리뷰 및 자사몰 구매고객 리뷰 중 발췌</p>
+  </section>
+
+  <section class="howto" id="s07">
+    <div class="center">
+      <span class="eyebrow">How to Use</span>
+      <h2>사용법 3 STEP</h2>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <img src="images/step1.jpg" alt="STEP 1 거품 내기">
+        <div class="body"><span class="n">1</span><h4>거품 내기</h4><p>미온수로 두피와 모발을 충분히 적신 후, 샴푸바를 손으로 문질러 거품을 냅니다. 거품망을 쓰면 더 풍성해집니다.</p></div>
+      </div>
+      <div class="step">
+        <img src="images/step2.jpg" alt="STEP 2 고르게 도포">
+        <div class="body"><span class="n">2</span><h4>고르게 도포</h4><p>거품을 두피와 모발에 고르게 펴 발라줍니다. 물에 적신 샴푸바를 직접 부드럽게 문질러도 좋습니다.</p></div>
+      </div>
+      <div class="step">
+        <video src="images/step3_clip.mp4" autoplay muted loop playsinline></video>
+        <div class="body"><span class="n">3</span><h4>3분 후 헹구기</h4><p>3분 정도 그대로 두거나 부드럽게 마사지해 준 후, 미온수로 깨끗이 씻어냅니다. 뻣뻣함 없이 부드럽게 헹궈집니다.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. STORY -->
+  <section id="s11">
+    <div class="center">
+      <span class="eyebrow">Pine Cone Story</span>
+      <h2>숲이 알려준 회복의 비밀,<br><span class="accent">잣 솔방울</span></h2>
+    </div>
+    <figure class="story-img">
+      <img src="images/bird.jpg" alt="잣 솔방울을 쪼아 먹는 솔잣새">
+      <figcaption>가평 잣나무 숲의 솔잣새</figcaption>
+    </figure>
+    <div class="story-text">
+      가평의 깊은 숲, 겨울이 내려앉은 어느 날.<br>
+      다리가 불편했던 작은 솔잣새 한 마리가<br>
+      잣 솔방울을 쪼아 먹고 <strong>다시 힘차게 날아올랐습니다.</strong><br><br>
+      올고는 솔잣새가 알려준 숲의 회복 에너지에 주목했습니다.<br>
+      잣나무가 씨앗을 지키기 위해 만든 보호막, 잣 솔방울 외종피 —<br>
+      그 안에 <strong>폴리페놀과 항산화 에너지</strong>가 담겨 있습니다.
+    </div>
+    <div class="facts3">
+      <div class="fact"><div class="f-no">FACT 01</div><h4>씨앗을 지키는<br>천연 보호 성분</h4><p>잣나무가 혹독한 계절에서 씨앗을 지키기 위해 외종피에 응축한 폴리페놀 항산화 성분입니다.</p></div>
+      <div class="fact"><div class="f-no">FACT 02</div><h4>연구와 특허로<br>증명된 원료</h4><p>경기도 산림환경연구소 연구로 효과가 확인되고, 특허 제10-1443023호로 등록된 기능성 원료입니다.</p></div>
+      <div class="fact"><div class="f-no">FACT 03</div><h4>버려지던 자원의<br>재탄생</h4><p>매년 약 40만 톤 버려지던 국내 최다 식물 부산물이 두피를 위한 원료로 다시 태어났습니다.</p></div>
+    </div>
+    <p class="story-quote">“숲은 비워낸 후 다시 채웁니다.<br>Re:pine은 그 자연의 순환에서 시작했습니다.”</p>
+  </section>
+
+  <!-- 12. 지속가능성 -->
+  <section class="problem" id="s12">
+    <div class="center">
+      <span class="eyebrow">Sustainability, Without Compromise</span>
+      <h2>타협하지 않는 지속가능함</h2>
+      <p class="lead">매년 약 40만 톤 버려지던 잣 솔방울을 기능성 원료로 재탄생시켰습니다.</p>
+    </div>
+    <div class="sus-img"><img src="images/lab.jpg" alt="잣 솔방울 추출 연출컷"></div>
+    <div class="sus-list">
+      <div class="sus-item"><div class="en">Upcycle</div><h4>From Waste to Worth</h4><p>버려지던 잣 솔방울의 재탄생</p></div>
+      <div class="sus-item"><div class="en">Zero Plastics</div><h4>Paper over Plastic</h4><p>무표백 재생종이 패키지</p></div>
+      <div class="sus-item"><div class="en">Solid Beauty</div><h4>Solid over Liquid</h4><p>액상 용기 없는 고농축 고체 샴푸바</p></div>
+      <div class="sus-item"><div class="en">Vegan</div><h4>Certified Vegan Beauty</h4><p>비건소사이어티 인증 헤어케어</p></div>
+    </div>
+  </section>
+
+  <!-- 13. FAQ -->
+  <section id="s13">
+    <div class="center">
+      <span class="eyebrow">FAQ</span>
+      <h2>자주 묻는 질문</h2>
+    </div>
+    <div class="faq">
+      <details><summary>Q. 샴푸바인데 거품이 잘 나나요?</summary><div class="a">네. 미온수로 충분히 적신 뒤 문지르면 풍성하고 조밀한 거품이 빠르게 생성됩니다.</div></details>
+      <details><summary>Q. 사용 후 머릿결이 뻣뻣하지 않나요?</summary><div class="a">세정 후에도 모발 컨디션을 고려해 부드러운 사용감과 정돈된 머릿결을 목표로 설계되었습니다.</div></details>
+      <details><summary>Q. 얼마나 오래 사용할 수 있나요?</summary><div class="a">1회 2g 기준 약 60회 사용 분량으로, 짧은 모발에 매일 감는 경우 약 2달 사용량입니다.</div></details>
+      <details><summary>Q. 두피가 예민한 편인데 사용 가능한가요?</summary><div class="a">피부 저자극 시험이 완료된 제품입니다. 편백오일 피톤치드 성분에 예민하신 분은 첫 사용 시 국소 테스트를 권장합니다.</div></details>
+      <details><summary>Q. 남성 전용 제품인가요?</summary><div class="a">아닙니다. 두피 고민이 있는 남녀 모두 사용할 수 있도록 설계되었습니다.</div></details>
+      <details><summary>Q. 향은 어떤 느낌인가요?</summary><div class="a">천연 고순도 편백 에센셜 오일이 15,000ppm 함유되어 상쾌하고 맑은 숲의 향입니다.</div></details>
+      <details><summary>Q. 위생적으로 보관하기 어렵지 않나요?</summary><div class="a">사용 후 물기를 털어 건조가 잘 되는 받침대에 보관하시면 깔끔하게 오래 사용할 수 있습니다.</div></details>
+    </div>
+  </section>
+
+  <!-- 14. 제품 정보 -->
+  <section id="s14">
+    <div class="center">
+      <span class="eyebrow">Product Info</span>
+      <h2>제품 정보</h2>
+    </div>
+    <table class="info-table">
+      <tr><th>제품명</th><td>올고 리:파인 두피 밸런싱 샴푸바</td></tr>
+      <tr><th>기능성</th><td>식약처 보고 탈모 증상 완화 기능성 화장품</td></tr>
+      <tr><th>용량</th><td>120g (NET WT. 4.2 OZ.) · 약 60회 사용</td></tr>
+      <tr><th>제형</th><td>고체 샴푸바 · 약산성 pH</td></tr>
+      <tr><th>인증</th><td>VEGAN 인증 · ECOCERT 승인 원료 · 피부 저자극 시험 완료</td></tr>
+    </table>
+    <p class="ingredients"><strong>전성분</strong> — 소듐코코일이세티오네이트, 옥수수전분, 정제수, 글리세린, 해바라기씨오일, 코코넛애씨드, 소듐이세티오네이트, 데실글루코사이드, 편백오일, 잔탄검, 부틸렌글라이콜, 시트릭애씨드, 살리실릭애씨드, 덱스판테놀, 테트라소듐이디티에이, 잣나무외종피추출물, 아르간커넬오일, 치자추출물, 잇꽃꽃추출물, 덱스트린, 로즈마리추출물, 1,2-헥산다이올, 하이드롤라이즈드쌀단백질, 하이드롤라이즈드참깨단백질, 하이드롤라이즈드보리단백질, 하이드롤라이즈드헤이즐넛단백질, 하이드롤라이즈드콩단백질, 하이드롤라이즈드완두콩단백질, 카프릴릴글라이콜, 리모넨, 알파-터피넨</p>
+  </section>
+
+  <footer id="s15">
+    <img src="images/logo.png" alt="Re:pine 로고" style="width:220px;margin:0 auto;">
+    <p>버려진 솔방울을 <strong>Recycle</strong>하고,<br>
+    숲의 에너지를 <strong>Refine</strong>하며,<br>
+    두피의 균형을 <strong>Rebalance</strong>하는<br>
+    순환의 뷰티 루틴.</p>
+    <img src="images/olgo.png" alt="OLGO 로고" style="width:120px;margin:28px auto 0;">
+  </footer>
+
+</div>
+</body>
+</html>
